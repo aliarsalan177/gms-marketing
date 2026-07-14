@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GMS — Gym Management System</title>
+  <meta name="description" content="Complete gym management with member CRM, membership + package tracking, biometric attendance (ZKTeco), automated suspension on expiry, trainer module, revenue reports, and a Windows desktop app." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💪%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="wrap">
+      <a href="#" class="brand">💪 GMS</a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#biometric">Biometric</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#demo">Try demo</a></li>
+        <li><a href="#contact" class="btn btn-sm">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="pill">Now with automatic membership lifecycle</span>
+      <h1>The complete gym management system that runs on your PC.</h1>
+      <p class="lede">
+        Member CRM, package + membership tracking, biometric attendance,
+        automated fingerprint suspension on expiry, trainer commissions,
+        revenue reports. Single Windows install, no monthly SaaS bill,
+        works offline.
+      </p>
+      <div class="cta-row">
+        <a href="#demo" class="btn btn-primary">Try live demo</a>
+        <a href="#contact" class="btn btn-secondary">Book a walkthrough</a>
+      </div>
+      <p class="micro">
+        Trusted by independent gyms. Ships as a signed Windows installer.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="wrap">
+      <h2>Everything a gym needs to run day-to-day.</h2>
+      <p class="sub">
+        No modules to buy separately. No "upgrade to Pro" for the basics.
+      </p>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="icon">👤</div>
+          <h3>Member CRM</h3>
+          <p>Register members, photo capture, emergency contacts, CNIC, notes, join date. Full search + import/export CSV.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🎫</div>
+          <h3>Memberships &amp; packages</h3>
+          <p>Custom package durations, grace periods, add-ons, credits. Renew, cancel, settle balance — all with receipts.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🖐️</div>
+          <h3>Biometric attendance</h3>
+          <p>ZKTeco K20/K30/K50 supported. Live scan → door opens → attendance logged. Auto-catchup on reconnect.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🔒</div>
+          <h3>Auto-suspend on expiry</h3>
+          <p>When a member's package expires past grace, GMS can auto-suspend their fingerprint until they renew. No manual chasing.</p>
+        </article>
+        <article class="card">
+          <div class="icon">💪</div>
+          <h3>Trainer module</h3>
+          <p>Track trainers, commissions, per-session assignments. Trainer attendance separate from members.</p>
+        </article>
+        <article class="card">
+          <div class="icon">📊</div>
+          <h3>Revenue reports</h3>
+          <p>Daily/weekly/monthly revenue, package breakdowns, unpaid balances, refunds. Export to Excel.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🖨️</div>
+          <h3>Receipt printing</h3>
+          <p>Direct silent printing to thermal or A4 printers. No PDF popup, no browser print dialog.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🌍</div>
+          <h3>English + Urdu</h3>
+          <p>Full bilingual UI. Every screen, every button, every error message. Switch on the fly.</p>
+        </article>
+        <article class="card">
+          <div class="icon">💻</div>
+          <h3>Runs on your PC</h3>
+          <p>Windows desktop app. No monthly SaaS. Works offline. Your data stays on your machine.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="biometric">
+    <div class="wrap">
+      <h2>Verified biometric hardware. Nothing to guess about.</h2>
+      <p class="sub">
+        GMS has been tested end-to-end against every device below — from
+        live scan to door open to attendance log to auto-suspend to
+        re-enable on renewal.
+      </p>
+      <div class="grid grid-2">
+        <div class="device-card device-recommended">
+          <h3>✅ Recommended</h3>
+          <ul>
+            <li><strong>ZKTeco K20</strong> — 500 fingerprints, small gyms</li>
+            <li><strong>ZKTeco K30</strong> — 1000 fingerprints, most gyms</li>
+            <li><strong>ZKTeco K50 / K90</strong> — 3000+ fingerprints, large gyms</li>
+            <li><strong>ZKTeco SpeedFace-V5L</strong> — face + fingerprint, contactless</li>
+          </ul>
+        </div>
+        <div class="device-card device-supported">
+          <h3>👍 Also supported</h3>
+          <ul>
+            <li><strong>ZKTeco MA300</strong> — outdoor, IP65 rated</li>
+            <li><strong>ZKTeco iClock260</strong> — enterprise / chains</li>
+            <li><strong>ZKTeco MB160</strong> — face + fingerprint combo</li>
+          </ul>
+        </div>
+        <div class="device-card device-avoid">
+          <h3>⚠️ Avoid</h3>
+          <ul>
+            <li><strong>ZKTeco K40</strong> — firmware bug wedges TCP sessions. Use K30 instead.</li>
+          </ul>
+        </div>
+        <div class="device-card device-note">
+          <h3>🔧 What "supported" means</h3>
+          <p>
+            Persistent connection via the bundled Windows bridge service,
+            real-time scan push, offline catchup, remote enrolment, auto
+            user sync, per-member suspend/reactivate. No manual protocol
+            tweaking.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="workflow">
+    <div class="wrap">
+      <h2>From new member to check-in in under 90 seconds.</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <div>
+            <h3>Register the member</h3>
+            <p>Name, phone, photo. Optional CNIC and emergency contact. Auto-generated member code.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <div>
+            <h3>Sell them a package</h3>
+            <p>Pick from your catalog or build a custom package. Full or partial payment, cash or transfer, receipt printed instantly.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <div>
+            <h3>Enrol their fingerprint</h3>
+            <p>Click Capture on their page → they place a finger on the scanner → done. GMS auto-reconnects the device if it's stale.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <div>
+            <h3>They scan on their way in</h3>
+            <p>Scanner recognises them → door opens → attendance logged → reception gets a toast showing their name + package status.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">5</span>
+          <div>
+            <h3>Their package expires</h3>
+            <p>GMS auto-suspends their access. Scanner denies them until they renew. Renewal auto-reactivates. Zero manual bookkeeping.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="pricing">
+    <div class="wrap">
+      <h2>One-time licence. No monthly SaaS.</h2>
+      <p class="sub">
+        You buy the software once, install on your PC, run it forever.
+        Optional annual support subscription for updates + priority help.
+      </p>
+      <div class="grid grid-3">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price">Contact us</p>
+          <p>Up to 200 members, 1 device, 1 admin user.</p>
+          <ul>
+            <li>All modules included</li>
+            <li>Free updates for 1 year</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary">Get a quote</a>
+        </article>
+        <article class="price-card price-featured">
+          <div class="price-tag">Most popular</div>
+          <h3>Pro</h3>
+          <p class="price">Contact us</p>
+          <p>Up to 1000 members, 3 devices, unlimited staff users.</p>
+          <ul>
+            <li>All modules included</li>
+            <li>Windows bridge for K30+</li>
+            <li>Free updates for 2 years</li>
+            <li>Phone + email support</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get a quote</a>
+        </article>
+        <article class="price-card">
+          <h3>Enterprise</h3>
+          <p class="price">Contact us</p>
+          <p>Unlimited members, unlimited devices, multi-branch.</p>
+          <ul>
+            <li>All modules included</li>
+            <li>White-label branding</li>
+            <li>Custom modules on request</li>
+            <li>Dedicated account manager</li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary">Get a quote</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="demo">
+    <div class="wrap demo-wrap">
+      <div>
+        <h2>Try the live demo.</h2>
+        <p class="sub">
+          Mock data, no signup, nothing to install. Log in with the
+          credentials below and explore every screen — members,
+          memberships, biometric, reports.
+        </p>
+        <div class="demo-creds">
+          <div><span class="demo-label">Username</span><code>demo</code></div>
+          <div><span class="demo-label">Password</span><code>demo123</code></div>
+        </div>
+        <a href="./demo/" class="btn btn-primary">Launch demo →</a>
+        <p class="micro">
+          Demo data resets every hour. Nothing you do here is saved.
+        </p>
+      </div>
+      <aside class="demo-note">
+        <h3>What the demo covers</h3>
+        <ul>
+          <li>Member registration + edit</li>
+          <li>Sell + renew a package</li>
+          <li>Simulated biometric scan → attendance</li>
+          <li>Suspension / reactivation flow</li>
+          <li>Revenue report</li>
+          <li>Full bilingual UI</li>
+        </ul>
+        <p class="micro">
+          Biometric device connection is simulated. In the real Windows
+          install this connects to your actual ZKTeco scanner.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="wrap">
+      <h2>Ready to run your gym on GMS?</h2>
+      <p class="sub">Tell us about your gym and we'll get back with a quote + install plan within one working day.</p>
+      <div class="contact-grid">
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:sales@example.com">sales@example.com</a></p>
+        </div>
+        <div>
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/000000000">+00 000 000 0000</a></p>
+        </div>
+        <div>
+          <h3>Location</h3>
+          <p>Serving gyms across Pakistan and the GCC.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand">💪 GMS</p>
+        <p class="micro">The complete gym management system.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#biometric">Biometric hardware</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Try it</h4>
+        <ul>
+          <li><a href="#demo">Live demo</a></li>
+          <li><a href="#contact">Book a walkthrough</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bar micro">© 2026 GMS. All rights reserved.</p>
+  </footer>
+
+  <script src="./assets/script.js"></script>
+</body>
+</html>
