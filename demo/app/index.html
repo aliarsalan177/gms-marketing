@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GMS Demo — Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💪%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./app.css" />
+</head>
+<body>
+  <div class="demo-banner">
+    <span>💡 <strong>Demo mode</strong> — mock data, nothing is saved to a real database. State lives in your browser.</span>
+    <div class="hstack">
+      <button id="btn-reset" class="link-btn">Reset demo</button>
+      <a href="../../" class="link-btn">← Back to marketing site</a>
+    </div>
+  </div>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-row">
+        <div class="brand-logo">G</div>
+        <div>
+          <div class="brand-name">GMS Demo</div>
+          <div class="brand-role">Gym Management System</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#/dashboard" data-route="dashboard" class="nav-item">
+          <span class="nav-icon">◧</span> <span>Dashboard</span>
+        </a>
+        <a href="#/members" data-route="members" class="nav-item">
+          <span class="nav-icon">◔</span> <span>Members</span>
+        </a>
+        <a href="#/attendance" data-route="attendance" class="nav-item">
+          <span class="nav-icon">◈</span> <span>Attendance</span>
+        </a>
+        <a href="#/scanner" data-route="scanner" class="nav-item">
+          <span class="nav-icon">◉</span> <span>Scanner</span>
+        </a>
+        <a href="#/reports" data-route="reports" class="nav-item">
+          <span class="nav-icon">◐</span> <span>Reports</span>
+        </a>
+        <a href="#/settings" data-route="settings" class="nav-item">
+          <span class="nav-icon">◇</span> <span>Settings</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-chip">
+          <div class="avatar">D</div>
+          <div>
+            <div class="user-name">Demo Admin</div>
+            <div class="user-role">Administrator</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main-wrap">
+      <div class="topbar">
+        <div class="topbar-title" id="topbar-title">Dashboard</div>
+        <div class="topbar-right">
+          <span>Demo Admin</span>
+          <div class="avatar" style="width:28px;height:28px;font-size:11px">D</div>
+        </div>
+      </div>
+      <main class="main">
+        <div id="view"></div>
+      </main>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts"></div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
